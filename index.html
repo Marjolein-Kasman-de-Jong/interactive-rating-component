@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Interactive rating component</title>
+</head>
+<body>
+    <form id="how-did-we-do" class="card active">
+        <div class="star-wrapper">
+            <img src="assets/images/icon-star.svg" alt="star">
+        </div>
+        <div class="container">
+            <h2 class="card-title">How did we do?</h2>
+            <p class="regular-paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="score-wrapper">
+                <label for="1" class="score">
+                    <input type="radio" id="1" name="score" value="1">
+                    1
+                </label>
+                <label for="2" class="score">
+                    <input type="radio" id="2" name="score" value="2">
+                    2
+                </label>
+                <label for="3" class="score">
+                    <input type="radio" id="3" name="score" value="3">
+                    3
+                </label>
+                <label for="4" class="score">
+                    <input type="radio" id="4" name="score" value="4">
+                    4
+                </label>
+                <label for="5" class="score">
+                    <input type="radio" id="5" name="score" value="5">
+                    5
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="button" id="submit" disabled>submit</button>
+    </form>
+    <div id="thank-you" class="card">
+        <img src="assets/images/illustration-thank-you.svg" alt="Smartphone and debit card">
+        <p class="selection">You selected&nbsp;<span id="given-score"></span>&nbsp;out of 5</p>
+        <div class="container">
+            <h2 class="card-title">Thank you!</h2>
+            <p class="regular-paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
+    </div>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
